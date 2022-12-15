@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>video-gallery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    
+    <style>
+
+        body{
+            margin: 0;
+            background-color: black;
+            color: white;
+           font-family: 'Ubuntu Condensed', sans-serif;
+        }
+
+        .header__image-left{
+            max-width: 24%;
+            float: left;
+        }
+
+        .header__image-right{
+            max-width: 24%;
+            float: right;
+        }
+
+        .header__title{
+            text-align: center;
+            margin: 50px 0 0;
+            text-transform: uppercase;
+            font-size: 3em; 
+        }  
+
+        .header__content{
+            font-size: 20px;
+            text-align: center;
+        }
+
+        .main{
+           clear: both;
+           width: 100%;
+           min-height: 400px;
+        }
+
+       .main__title{
+            text-align: center;
+            font-size: 35px;
+            text-decoration: underline;
+        }
+
+       .main__box{
+            float: left;
+            width: 23%;   
+            margin: 0 15px;
+            font-size: 15px;  
+       }
+
+       .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;  
+        }
+
+        .video-wrapper iframe{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+    </style>
+</head>
+<body>  
+    <div class="header">
+        <img src="oscar.jpg" alt="oscar" class="header__image-left">
+        <img src="oscar-woman.jpg" alt="oscar-woman" class="header__image-right">
+        <h1 class="header__title">&quot;Оскар&quot; &mdash; главная кинопремия США</h1> 
+        <p class="header__content">Самая престижная кинонаграда мира, ежегодно вручаемая американской киноакадемией. Для большинства деятелей кино эта статуэтка считается высшей точкой признания коллег и мирового киносообщества.</p>
+        <p class="header__content">&quot;Оскар&quot; в отличие от многих иных профессиональных премий, &quot;Оскары&quot; вручаются по результатам всеобщего голосования членов Академии, а не по выбору назначенного заранее жюри. Торжественная церемония вручения транслируется в десятках стран в прямом эфире. Первое вручение премии &quot;Оскар&quot; состоялось в 1929 году. До 1976 года прямая трансляция церемонии проводилась каналом NBC, теперь же права принадлежат телеканалу ABC. Американская Киноакадемия состоит из более чем 5000 членов с правом голоса, разделенных по различным подразделениям. Самым представительным из них является актерское. Каждое подразделение голосует за претендентов исключительно в своей категории. Вместе члены Киноакадемии голосуют только в одной категории - &quot;лучший фильм&quot;. Помимо, собственно, самой золотой статуэтки победители также получают ценные подарки от спонсоров шоу. Наличие среди прочих регалий премии &quot;Оскар&quot; оказывает существенное влияние на карьеру кинематографиста, его статус в мире кино и гонорары.</p>  
+    </div>
+
+    <div class="main">
+        
+        <h1 class="main__title">Победители в номинации &quot;Лучший фильм&quot;</h1>
+
+        <div class="main__box">
+            <h2>2022 год: &quot;CODA: Ребёнок глухих родителей&quot;</h2>
+            <p>США, Франция, Канада, 2021 год; драма; длительность: 111 минут</p>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/0pmfrE1YL4I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="main__box">
+            <h2>2021 год: &quot;Земля кочевников&quot;</h2>
+            <p>США, Германия, 2020 год; драма; длительность: 110 минут</p>  
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/D0lJAv9WCSA" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+
+       <div class="main__box"> 
+            <h2>2020 год: &quot;Паразиты&quot;</h2>
+            <p>Корея Южная, 2019 год; драма, триллер; длительность: 131 минута</p>
+            <div class="video-wrapper">
+                <iframe width="160" height="85" src="https://www.youtube.com/embed/pPusVs-yKss" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+
+        <div class="main__box">
+            <h2>2019 год: &quot;Зелёная книга&quot;</h2>
+            <p>США, 2018 год; драма, биография; длительность: 130 минут</p>
+            <div class="video-wrapper">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/eors1MMmY5I" title="YouTube video player"
+                frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
